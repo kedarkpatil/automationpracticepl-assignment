@@ -105,9 +105,10 @@ namespace AutomationWeb.EToETests
             return "randomemail@example.com";
         }
         [TearDown]
-        public void closeBrowser()
+        public void closeBrowser()//For clean up session
         {
             _driver.Close();
+            _driver.Quit();
         }
     }
 }
