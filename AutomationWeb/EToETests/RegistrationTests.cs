@@ -100,9 +100,10 @@ namespace RegistrationTests
             return "randomemailid@example.com";
         }
         [TearDown]
-        public void closeBrowser()
+        public void closeBrowser()//For clean up session
         {
             _driver.Close();
+            _driver.Quit();
         }
     }
 }
