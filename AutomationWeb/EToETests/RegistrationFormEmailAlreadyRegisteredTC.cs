@@ -63,9 +63,10 @@ namespace AutomationWeb.EToETests
             _registration.AlertCreateAccount();
         }
         [TearDown]
-        public void closeBrowser()
+        public void closeBrowser()//For clean up session
         {
             _driver.Close();
+            _driver.Quit();
         }
     }
 }
