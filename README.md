@@ -32,6 +32,47 @@ The motive of this project is to create [Test cases](https://github.com/kedarkpa
 
 The Testing Document start with [TEST CASES](https://github.com/kedarkpatil/automationpracticepl-assignment/tree/master/TestCasesWritten) to the test results to the reported [BUGS](https://github.com/kedarkpatil/automationpracticepl-assignment/tree/master/BugsReported). This will enable a fuller understanding of the activities carried out and facilitate possible future reference.  
 
+### Overview
+This README file provides instructions on how to run and configure the test scripts created using Selenium with C# and NUnit. Additionally, it includes information on the time spent on the task and the challenges faced during the implementation.
+
+## Prerequisites
+Before running the test scripts, ensure you have the following installed on your system:
+
+- Visual Studio 2019
+- Selenium WebDriver (C# bindings)
+- NUnit and NUnit3TestAdapter and RestSharp Libraries
+- ChromeDriver browser
+
+## Setup Instructions
+- Clone the Repository
+- git clone https://github.com/kedarkpatil/automationpracticepl-assignment/tree/master
+- Open the Solution in Visual Studio
+- Navigate to the cloned repository folder and open the solution file (.sln) in Visual Studio.
+- Restore NuGet Packages
+- Visual Studio should automatically restore the required NuGet packages. If not, go to Tools > NuGet Package Manager > Manage NuGet Packages for Solution and restore the packages.
+- Configure Browser Driver
+- Ensure that the path to ChromeDriver (or the driver for the browser you are using) is correctly set in your project. You can place the driver in the project directory or specify its path in the code.
+- Run the Tests
+- Open the Test Explorer in Visual Studio (Test > Test Explorer).
+- Build the solution (Build > Build Solution or Ctrl+Shift+B).
+- Run all tests by clicking the Run All button in the Test Explorer.
+
+
+## Time Spent and Challenges Faced
+## Time Spent:---
+- Research and Setup: 3 hours
+- Writing Test Cases: 12 hours
+- Debugging and Verification: 4 hours
+- Documentation: 2 hours
+- Total: 20 hours
+
+## Challenges Faced:----
+
+- Synchronization Issues:- It was challenging to handle dynamic web elements and ensure proper timing. This was resolved by using explicit waits to manage timing more effectively.
+- Test Data Management:- Creating and managing test data in a Static class and declared variables in class file.
+- NUnit Integration:- Integrating NUnit with Selenium was tricky and time-consuming. Some packages were outdated for newer .NET versions, requiring workarounds to get everything working smoothly.Because some packages are obsolete for .NET versions.
+
+
 
 ## Summary
 
